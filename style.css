@@ -1,0 +1,190 @@
+@font-face {
+  font-family: Roboto;
+  src: url(./assets/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: Roboto-bold;
+  src: url(./assets/fonts/Roboto-Bold.ttf);
+}
+
+:root {
+  --tomato : hsl(4, 100%, 67%);
+  --pink: #F34E74;
+  --orange: #FF6A3A;
+
+  --dark-slate-grey: hsl(234, 29%, 20%);
+  --charcoal-grey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+}
+
+*{
+  margin: 0;  
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+body {
+  width: 100%;
+  background-color: var(--dark-slate-grey);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-up-form {
+  display: block;
+  width: 375px;
+  background-color: var(--white);
+  border-radius: 16px;
+  position: relative;
+}
+
+.sign-up-form-img {
+  max-width: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-up-form-img .img-mobile-view {
+  width:  375px;
+  border-radius: 10px;
+}
+
+.sign-up-form-text {
+  padding: 20px;
+}
+
+.sign-up-form-text h1 {
+  color: var(--dark-slate-grey);
+  font-weight: 700;
+}
+
+.sign-up-form-text p {
+  padding-top: 10px;
+  color: var(--charcoal-grey);
+}
+
+.sign-up-form-text ul {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.sign-up-form-text ul li {
+  display: inline-flex;
+  position: relative;
+}
+
+.sign-up-form-text ul li img {
+  position: absolute;
+}
+
+.sign-up-form-text ul li span {
+  font-size: 15px;
+  color: var(--charcoal-grey);
+  padding-left: 2.5rem;
+  margin-bottom: 7px;
+  padding-right: 10px;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.form-section input,
+.form-section .submit-btn {
+  padding: 15px 20px;
+  border-radius: 6px;
+  outline: none;
+}
+
+.form-section label {
+  font-family: Roboto-bold;
+  font-weight: 300;
+  font-size: 12px;
+  padding-bottom: 7px;
+}
+
+.form-section input {
+  border: 1px solid #cbcbcb;
+  margin-bottom: 20px;
+}
+
+.form-section input:focus {
+  border: 1px solid var(--dark-slate-grey);
+}
+
+.form-section .submit-btn {
+  background-color: var(--dark-slate-grey);
+  color: var(--white);
+  border: none;
+  font-family: Roboto-bold;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.form-section .submit-btn:hover {
+  background-image: linear-gradient(to right, var(--pink), var(--orange));
+}
+
+.img-desktop-view {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.error {
+  color: var(--tomato);
+  border: 1px solid var(--tomato);
+  background-color: hsla(4, 100%, 67%, .25);
+}
+
+.error-msg {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--tomato);
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+}
+
+@media screen and (min-width: 950px) {
+  .sign-up-form {
+    width: 50rem;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .img-desktop-view {
+    display: block;
+    padding: 20px;
+    width: 375px;
+  }
+
+  .img-mobile-view {
+    display: none;
+  }
+
+  .sign-up-form-text {
+    padding: 4rem  2.5rem 4rem 2.5rem;
+  }
+
+  .sign-up-form-text h1 {
+    font-size: 3rem;
+    font-family: Roboto-bold;
+    font-weight: 400;
+  }
+
+
+}
