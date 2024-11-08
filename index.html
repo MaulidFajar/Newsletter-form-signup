@@ -37,25 +37,28 @@
             <label for="email">Email address</label>
             <span class="error-msg"></span>
             <input type="email" name="email" placeholder="email@company.com" required>
-            <button class="submit-btn">Subscribe to monthly newsletter</button>
+            <button class="submit-btn btn">Subscribe to monthly newsletter</button>
           </form>
         </ul>
       </div>
     </div>
+  </div>
   <!-- Sign-up form end -->
 
   <!-- Success message start -->
-  <div class="success-msg hidden">
-    <div class="success-msg-img">
-      <img src="./assets/images/icon-success.svg" alt="icon message success">
+   <div class="wrapper">
+    <div class="success-msg hidden">
+      <div class="success-msg-img">
+        <img src="./assets/images/icon-success.svg" alt="icon message success">
+      </div>
+      <div class="success-msg-text">
+        <h1>Thanks for subscribing!</h1>
+        <p>A confirmation email has been sent to <span class="user-email"></span> Please open it and click the button inside to confirm your subscription.</p>
+      </div>
+      <button class="msg-btn btn">Dismiss message</button>
+      </div>
     </div>
-    <div class="success-msg-text">
-      <h1>Thanks for subscribing!</h1>
-      <p>A confirmation email has been sent to <strong>ash@loremcompany.com.</strong> Please open it and click the button inside to confirm your subscription.</p>
-    </div>
-    <button class="msg-btn">Dismiss message</button>
-    </div>
-  </div>
+   </div>
   <!-- Success message end -->
 
   <script src="script.js"></script>
