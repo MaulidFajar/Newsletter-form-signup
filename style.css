@@ -199,6 +199,11 @@ body {
 }
 
 @media screen and (min-width: 950px) {
+
+  body {
+    overflow: hidden;
+
+  }
   .sign-up-form {
     width: 50rem;
     display: flex;
